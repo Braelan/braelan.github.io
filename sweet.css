@@ -1,0 +1,85 @@
+html, body, h1, h2, a, i, select, p, section,
+div, ul, li, strong {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  text-align: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+}
+
+ul {
+list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+h1 {
+  font-family: 'Cabin Sketch';
+  display: block;
+  height: 20px;
+  width: 25px;
+  background: black;
+}
+
+body {
+  width: 750px;
+  margin: auto;
+}
+
+.picture {
+  float: left;
+  border-radius: 50%;
+  height: 350px;
+  width: 350px;
+  border: 1px solid red;
+}
+
+.contact {
+  opacity: 1;
+  background: green ;
+  float: right;
+  height: 200px;
+  width: 300px;
+  position: fixed;
+  right: 10px;
+}
+
+.contact > .contact-info {
+  color: white;
+}
+
+.balloons {
+  width: 200px;
+  height: 450px;
+  border: 1px solid red;
+  float: right;
+}
+
+.edu {
+  height: 200px;
+  width: 400px;
+  border: 1px solid red;
+  float:left;
+}
+.seaStack {
+  width: 300px;
+  height: 300px;
+  border: 1px solid red;
+  float: right;
+}
+
+.ski {
+  width: 300px;
+  height: 300px;
+  border: 1px solid red;
+  float: left;
+}
