@@ -10,7 +10,7 @@ div, ul, li, strong, em {
   box-sizing: inherit;
   background: transparent;
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
 
 ul {
@@ -20,7 +20,7 @@ list-style: none;
 img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .group:after {
@@ -29,13 +29,15 @@ img {
   clear: both;
 }
 
+html {
+  background: #3D3333;
+}
 
 h1 {
   font-family: 'Cabin Sketch';
   display: block;
   height: 20px;
   width: 25px;
-  background: black;
 }
 em {
   font-weight: bold;
@@ -46,32 +48,35 @@ body {
   margin: auto;
 }
 
-a {
-  float: left;
-  display: block;
-  padding: 15px;
-  margin: auto;
-  border: 1px solid red;
-  border-radius: 5px;
-  text-align: center;
-  background: white;
+a:hover {
+
+  color: purple;
+}
+
+  a {
+  font-size: 40px
 }
 
 .picture {
   float: left;
-  border-radius: 50% 0 50% 0;
+  border-radius: 0 0 50% 0;
   height: 350px;
   width: 350px;
   border: 1px solid black;
   overflow: hidden;
 }
+.name {
+  margin: 30px;
+  float: left;
+  font-size: 80px;
+}
 
 .contact {
   z-index: 500;
   opacity: 1;
-  background: green ;
+  background: #04569F ;
   opacity: .8;
-  float: right;
+  float: left;
   height: 200px;
   width: 300px;
   position: fixed;
@@ -80,18 +85,19 @@ a {
 
 .contact > .contact-info {
   color: white;
+  padding: 20px
 }
 
 .sidebarleft {
   float: left;
-  background: yellow;
+  background: #3D3333;
   display: block;
   width: 120px;
 }
 
 .sidebarright {
   float: right;
-  background: yellow;
+  background: #3D3333;
   display: block;
   width: 120px;
 }
@@ -101,31 +107,42 @@ div > ul li {
   display: block;
   height: 100px;
   width: 100px;
-  background: blue;
+  background: #3D3333;
   float: left
 }
 .balloons {
   width: 200px;
   height: 450px;
-  border: 1px solid red;
+  border: 1px solid black;
   float: right;
 }
 
 .edu {
   margin: 20px 0 0 0;
-  height: 200px;
-  width: 400px;
-  border: 1px solid red;
+  padding: 20px;
+  height: auto;
+  width: 70.31%;
+  /*border: 1px solid black;*/
   float:left;
+  color: white;
 }
+
 
 .seaStack:hover > .cover {
   position: absolute;
   display: block;
   background: black;
-  opacity: .8;
-  width: 300px;
-  height: 300px;
+  opacity: .9;
+  width: 266px;
+  height: 266px;
+  color:white;
+}
+
+.seaStack:hover > .cover > p {
+  display: block;
+  color: white;
+  text-align: center;
+
 }
 
 .seaStack > .cover {
@@ -137,9 +154,10 @@ div > ul li {
   position: absolute;
   display: block;
   background: black;
-  opacity: .8;
-  width: 300px;
-  height: 300px;
+  opacity: .9;
+  width: 266px;
+  height: 266px;
+  color: white;
 }
 
 .ski > .cover {
@@ -147,6 +165,32 @@ div > ul li {
   position: absolute;
 }
 
+.ski:hover > .cover > p {
+  display: block;
+  color: white;
+  text-align: center;
+
+}
+.chess:hover > .cover {
+  position: absolute;
+  display: block;
+  background: black;
+  opacity: .9;
+  width: 266px;
+  height: 266px;
+  color:white;
+}
+
+.chess > .cover {
+  display: hidden;
+  position: absolute;
+}
+.chess:hover > .cover > p {
+  display: block;
+  color: white;
+  text-align: center;
+
+}
 
 
 
@@ -157,18 +201,40 @@ div > ul li {
 }*/
 
 .seaStack {
-  margin: 20px
+  margin: auto;
   position: relative;
-  width: 300px;
-  height: 300px;
-  border: 1px solid red;
-  float: right;
+  width: 266px;
+  height: 266px;
+  border: 1px solid black;
+  float: left;
+}
+.seaStack p{
+  display:none;
 }
 
 .ski {
-  margin: 20px 0  0 0;
-  width: 300px;
-  height: 300px;
-  border: 1px solid red;
+  position: relative;
+  margin: auto;
+  width: 266px;
+  height: 266px;
+  border: 1px solid black;
   float: left;
+}
+
+.ski p{
+  display:none;
+}
+.chess {
+  margin: auto;
+  width: 266px;
+  height: 266px;
+  border: 1px solid black;
+  float: right;
+}
+.chess p{
+  display:none;
+}
+.projects {
+  width: 804px;
+  margin: auto;
 }
