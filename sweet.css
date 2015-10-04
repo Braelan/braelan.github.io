@@ -65,6 +65,8 @@ a:hover {
   border: 1px solid black;
   overflow: hidden;
 }
+
+
 .name {
   margin: 30px;
   float: left;
@@ -132,7 +134,7 @@ div > ul li {
   position: absolute;
   display: block;
   background: black;
-  opacity: .9;
+  opacity: .5;
   width: 266px;
   height: 266px;
   color:white;
@@ -154,7 +156,7 @@ div > ul li {
   position: absolute;
   display: block;
   background: black;
-  opacity: .9;
+  opacity: .5;
   width: 266px;
   height: 266px;
   color: white;
@@ -175,7 +177,7 @@ div > ul li {
   position: absolute;
   display: block;
   background: black;
-  opacity: .9;
+  opacity: .5;
   width: 266px;
   height: 266px;
   color:white;
