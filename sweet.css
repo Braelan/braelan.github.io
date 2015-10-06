@@ -64,25 +64,34 @@ a:hover {
   width: 350px;
   border: 1px solid black;
   overflow: hidden;
+  margin: 20px 0 0 0
 }
 
 
 .name {
-  margin: 30px;
+  display: block;
+  width: 265px;
+  height: auto;
+  margin: 20px 30px 0 50px;
   float: left;
   font-size: 80px;
+  color: white;
+  /*border: 1px solid red;*/
+
 }
 
 .contact {
   z-index: 500;
   opacity: 1;
-  background: #04569F ;
+  /*background: #04569F ;*/
   opacity: .8;
+  margin: 0 30px 0 50px;
   float: left;
-  height: 200px;
-  width: 300px;
-  position: fixed;
-  right: 10px;
+  height: 150px;
+  width: 265px;
+  right: 325px;
+  top: 200px;
+  /*border: 1px solid red;*/
 }
 
 .contact > .contact-info {
@@ -91,7 +100,7 @@ a:hover {
 }
 
 .sidebarleft {
-  float: left;
+  float: right;
   background: #3D3333;
   display: block;
   width: 120px;
